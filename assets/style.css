@@ -1,0 +1,149 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.section {
+    text-align: center;
+    width: 1080px;
+    height: 1080px;
+    margin-bottom: auto;
+    max-width: 100%;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        #49c5b6 0%,
+        #49c5b6 70%,
+        #b34429 80%,
+        #b34429 100%
+    ); 
+    flex-wrap: wrap;
+
+  }
+.glow {
+    filter: brightness(1);
+    transition: filter 5s ease;
+  }
+    
+  /* Add a keyframe animation to make the glow effect more prominent */
+  @keyframes glowAnimation {
+    0% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.5);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+  /* Apply the animation to the 'glow' class when hovering with the mouse */
+  .glow:hover {
+    animation: glowAnimation 2s infinite;
+  }
+  
+  /* Apply the fade effect to the entire page when hovering over an image */
+  .glow:hover ~ body {
+    opacity: .1;
+  }  
+  h1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header {
+    color: Black;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 100px;
+    flex-wrap: wrap;
+  }
+  
+  main {
+    text-align: center;
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+ 
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .section-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .applications {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .application {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .application img {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .applications {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    
+    }
+
+    .application {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+   .email{
+        width: 5px;
+        height: 5px;
+
+    }
+    
+  }
